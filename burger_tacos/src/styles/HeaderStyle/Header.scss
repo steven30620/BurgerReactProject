@@ -6,12 +6,26 @@
   border-bottom: 2px solid rgb(21, 71, 34);
   box-shadow:  0px 1px 5px;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
     &-logo {
+     
       height: 25vmin;
       pointer-events: none;
-        animation: App-logo-landingPage 0.8s ease-in-out 1 running  ;
-      
+      animation: App-logo-landingPage 0.8s ease-in-out 1 running  ;
+    }
+    &-link{
+     width: 150px;
+     word-wrap: normal;
+     margin-right: 5px;
+    }
+    &-test{
+      width: 150px;
+      &1{
+        height: 2px;
+      }
+      &2{
+        height: 2px;
+      }
     }
 }
 
