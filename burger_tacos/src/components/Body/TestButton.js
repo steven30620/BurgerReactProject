@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../styles/HeaderStyle/TestButton.scss';
+import 'HeaderStyle/TestButton.scss';
 
 function Body() {
 	//states

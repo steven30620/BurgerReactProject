@@ -5,19 +5,50 @@
 
   &-banner{
    height: 300px;
-
-   &-background{
-    height:100%;
-    width: 100%;
-    object-fit: cover;
-    }
+          &-background{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+            }
+            &-contact{
+              display: flex;
+              justify-content: center;
+              position: relative;
+              text-align: center;
+              font-size: 40px;
+              top: -130px;
+              color: beige;
+              animation: popup 1.5s ease-in-out 1 running  ;
+            }
   }
   &-placeholder{
-    
-   
+
   }
 }
 
 
 //animations 
+@keyframes popup{
+  0%{
+    top: -50px ;
+    opacity: 20%;
+    scale: 1.2;
+  }
 
+  50%{
+    top: -130px;
+    opacity: 70%;
+    scale: 1.1;
+  }
+  75%{
+    top: -130px;
+    opacity: 70%;
+    scale: 1.2;
+  }
+  100%{
+    top: -130px;
+    opacity: 100%;
+    scale: 1;
+  }
+ 
+}

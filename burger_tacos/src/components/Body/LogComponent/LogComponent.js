@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../../styles/BodyStyle/LogComponentStyle/LogComponentStyle.scss';
+import 'BodyStyle/LogComponentStyle/LogComponentStyle.scss';
 import SignInComponent from './SignIn';
 import SignUpComponent from './SignUp';
 

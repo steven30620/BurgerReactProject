@@ -1,5 +1,5 @@
-import '../../styles/BodyStyle/Body.scss';
-import background from '../../assets/images/background.png';
+import 'BodyStyle/Body.scss';
+import background from 'Assets/images/background.png';
 import LogComponent from './LogComponent/LogComponent';
 import { Routes, Route } from 'react-router-dom';
 import ProductDisplayComponent from './ProductDisplay/ProductDisplayComponent';
@@ -17,6 +17,9 @@ function Body() {
 					src={background}
 					alt="burger_illustration"
 				/>
+				<div className="body-banner-contact">
+					Burger & Tacos <br /> Tel: 06.00.00.00.00
+				</div>
 			</div>
 			<div className="body-placeholder">
 				<Routes>

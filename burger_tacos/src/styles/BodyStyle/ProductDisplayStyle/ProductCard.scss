@@ -1,7 +1,53 @@
 .productCard{
-    height: 150px;
-    border: 5px solid rgb(136, 132, 132);
-    border-radius: 8px;
+    height: 250px;
+    width: 200px;
+    border: 3px solid rgb(43, 44, 119);
+    background-color: rgba(17, 91, 137, 0.798);
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.08);
+        transition: 0.5s ease-in-out;
+    }
+    &-header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: solid 3px  rgb(43, 44, 119);
+        &-name{
+            display: flex;
+            justify-content: center;
+            margin :10px
+        }
+        &-promo{
+            text-align: center;
+            width: 100%;
+            background-color: red;
+            border-bottom: rgb(255, 255, 255) 3px solid;
+        }
+    }
+    &-body{
+        height: 70%;
+        &-image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+           
+           
+        }
+        border-bottom: solid 3px  rgb(43, 44, 119);
+    }
+    &-footer{
+        display: flex;
+        justify-content: center;
+        &-price{
+            margin-top: 5px;
+            text-align: center;
+            height: 20px;
+        }
+       
+    }
 }

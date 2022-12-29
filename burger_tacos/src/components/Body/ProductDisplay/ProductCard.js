@@ -1,14 +1,36 @@
-import 'BodyStyle/ProductDisplayStyle/ProductCard';
+import 'BodyStyle/ProductDisplayStyle/ProductCard.scss';
+import menuImage from 'Assets/images/menu/chicken.png';
 
 export default function ProductCard({ ProductInfo }) {
+	// const isPromo = () => {
+	// 	if (ProductInfo.promo === true) {
+	// 		return (
+	// 			<div className="productCard-header-promo">
+	// 				{ProductInfo.promoMessage}
+	// 			</div>
+	// 		);
+	// 	}
+	// };
+
 	return (
 		<div className="productCard">
 			<div className="productCard-header">
-				<div className="productCard-name">{ProductInfo.name}</div>
-				<div className="productCard-promo">{ProductInfo.promo}</div>
+				<div className="productCard-header-name">
+					{ProductInfo.name}
+				</div>
 			</div>
-			<div className="productCard-body">{ProductInfo.image}</div>
-			<div className="productCard-footer">{ProductInfo.price}</div>
+			<div className="productCard-body">
+				<img
+					className="productCard-body-image"
+					src={menuImage}
+					alt="burger"
+				/>
+			</div>
+			<div className="productCard-footer">
+				<div className="productCard-footer-price">
+					{ProductInfo.price}€
+				</div>
+			</div>
 		</div>
 	);
 }

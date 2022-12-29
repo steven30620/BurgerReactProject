@@ -1,13 +1,16 @@
-import { useState } from 'react';
-import '../../../styles/BodyStyle/ProductDisplayStyle/ProductDisplay.scss';
+// import { useState } from 'react';
+import 'BodyStyle/ProductDisplayStyle/ProductDisplay.scss';
 import ProductCard from './ProductCard';
+
 //state
 function ProductDisplayComponent() {
 	//comportement
-	const [menuList] = useState([
+	const menuList = [
 		{
+			id: 121,
 			name: 'le premier menu ',
-			promo: 'PROMOTION !',
+			promo: true,
+			promoMessage: 'Promotion !',
 			menuContenue: {
 				principalProcuct: 'burger De zinzin',
 				secondaryProduct: 'Frite maison',
@@ -16,7 +19,10 @@ function ProductDisplayComponent() {
 			price: 9.99,
 		},
 		{
+			id: 1251,
 			name: 'le deuxieme menu ',
+			promo: false,
+			promoMessage: '',
 			menuContenue: {
 				principalProcuct: 'tacos De zinzin',
 				secondaryProduct: 'salade maison',
@@ -25,8 +31,10 @@ function ProductDisplayComponent() {
 			price: 12.99,
 		},
 		{
+			id: 12161,
 			name: 'le 4e menu ',
-			promo: 'PROMOTION !',
+			promo: true,
+			promoMessage: '3Jours restant !',
 			menuContenue: {
 				principalProcuct: 'burger De la maison',
 				secondaryProduct: 'Frite maison',
@@ -35,8 +43,10 @@ function ProductDisplayComponent() {
 			price: 8.99,
 		},
 		{
+			id: 1871,
 			name: 'le 5e menu ',
-
+			promo: false,
+			promoMessage: '',
 			menuContenue: {
 				principalProcuct: 'Tacos De la maison',
 				secondaryProduct: 'Frite maison',
@@ -44,27 +54,60 @@ function ProductDisplayComponent() {
 			},
 			price: 15.99,
 		},
-	]);
+	];
 	//affichage
 
 	return (
 		<div className="productDisplay">
-			<div className="productDisplay-menu">
-				{menuList.map((menu) => (
-					<ProductCard ProductInfo={menu} />
-				))}
+			<div className="productDisplay-row">
+				<div className="productDisplay-row-title">
+					Notre séléction de menus
+				</div>
+				<div className="productDisplay-row-list">
+					{menuList.map((menu) => (
+						<ProductCard key={menu.id} ProductInfo={menu} />
+					))}
+				</div>
 			</div>
-			<div className="productDisplay-burger">
-				<div>components des burger</div>
+			<div className="productDisplay-row">
+				<div className="productDisplay-row-title">
+					Notre séléction de burgers
+				</div>
+				<div className="productDisplay-row-list">
+					{menuList.map((menu) => (
+						<ProductCard key={menu.id} ProductInfo={menu} />
+					))}
+				</div>
 			</div>
-			<div className="productDisplay-tacos">
-				<div>components des tacos</div>
+			<div className="productDisplay-row">
+				<div className="productDisplay-row-title">
+					Notre séléction de Tacos
+				</div>
+				<div className="productDisplay-row-list">
+					{menuList.map((menu) => (
+						<ProductCard key={menu.id} ProductInfo={menu} />
+					))}
+				</div>
 			</div>
-			<div className="productDisplay-dessert">
-				<div>components des dessert</div>
+			<div className="productDisplay-row">
+				<div className="productDisplay-row-title">
+					Notre séléction de salades
+				</div>
+				<div className="productDisplay-row-list">
+					{menuList.map((menu) => (
+						<ProductCard key={menu.id} ProductInfo={menu} />
+					))}
+				</div>
 			</div>
-			<div className="productDisplay-dessert">
-				<div>components des dessert</div>
+			<div className="productDisplay-row">
+				<div className="productDisplay-row-title">
+					Notre séléction de Desserts
+				</div>
+				<div className="productDisplay-row-list">
+					{menuList.map((menu) => (
+						<ProductCard key={menu.id} ProductInfo={menu} />
+					))}
+				</div>
 			</div>
 		</div>
 	);

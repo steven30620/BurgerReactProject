@@ -1,6 +1,6 @@
-import Header from './components/Header/Header';
-import Body from './components/Body/Body';
-import Footer from './components/Footer/Footer';
+import Header from 'HeaderComponents/Header';
+import Body from 'BodyComponents/Body';
+import Footer from 'FooterComponents/Footer';
 import './styles/App.scss';
 
 function App() {

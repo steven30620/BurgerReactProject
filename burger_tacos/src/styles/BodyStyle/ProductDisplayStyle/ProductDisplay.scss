@@ -1,11 +1,19 @@
 .productDisplay{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin: 20px 10px 10px 10px;
-    &-menu{
+ 
+    &-row{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
         margin-bottom: 40px;
+        flex-wrap:wrap;
+        
+        &-list{
+            display: flex;
+            flex-direction: row;
+        }        
     }
 }
