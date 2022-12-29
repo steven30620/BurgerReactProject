@@ -1,9 +1,23 @@
 .body{
   display: flex;
-  justify-content: center;
-  min-height: 600px;
+  min-height: 800px;
+  flex-direction: column;
+
+  &-banner{
+   height: 300px;
+
+   &-background{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    }
+  }
+  &-placeholder{
+    
+   
+  }
 }
 
 
-//animations
+//animations 
 

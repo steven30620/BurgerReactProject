@@ -1,14 +1,17 @@
+@font-face {
+  font-family: chicken;
+  src: url(../assets/fonts/ChunkFive-Regular.otf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: chicken, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#bfffbf;
-
+  background-color:#e2e2e2;
   //flex global setting
-
   flex-direction: column;
   align-items: center;
   justify-content: center;

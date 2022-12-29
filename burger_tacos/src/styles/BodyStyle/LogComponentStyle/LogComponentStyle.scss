@@ -1,6 +1,6 @@
 .logComponent{
     width: 400px;
-    height: 400px;
+    max-height: 400px;
     margin-top: 80px;
     background-color: #f4f4f6;
     border-radius: 8px;
@@ -35,9 +35,34 @@
             }
         }
     }
+    &-body{
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    &-footer{
+        display: flex;
+        justify-content: center ;
+        &-button{
+            height: 50px;
+            width: 200px;
+        }
+    }
 }
 
-.signUpForm{
+.form{
+    font-size: 25px;
     display: flex;
     flex-direction: column;
+    &-signIn{
+        margin-top: 100px;
+    }
+    &-label{
+        text-align: center;
+        margin-top: 15px;
+    }
+    &-input{
+        margin-top: 5px;
+        height: 20px;
+    }
 }

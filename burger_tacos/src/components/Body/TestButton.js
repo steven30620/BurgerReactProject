@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import '../../styles/HeaderStyle/TestButton.scss';
+
 function Body() {
 	//states
 
@@ -6,8 +8,9 @@ function Body() {
 
 	//affichage
 	return (
-		<div className="body">
+		<div className="testButton">
 			<Link to="/"> Home </Link>
+			<Link to="/login"> Login </Link>
 		</div>
 	);
 }

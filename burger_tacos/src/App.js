@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import Body from './components/Body/Body';
 import Footer from './components/Footer/Footer';
+import './styles/App.scss';
 
 function App() {
 	//states
@@ -9,10 +10,10 @@ function App() {
 
 	//affichage
 	return (
-		<div className="App">
+		<div className="app">
 			<Header />
 			<Body />
-			<Footer />
+			<Footer className="footer" />
 		</div>
 	);
 }

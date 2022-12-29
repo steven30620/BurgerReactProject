@@ -1,7 +1,8 @@
 import '../../styles/BodyStyle/Body.scss';
+import background from '../../assets/images/background.png';
 import LogComponent from './LogComponent/LogComponent';
 import { Routes, Route } from 'react-router-dom';
-
+import ProductDisplayComponent from './ProductDisplay/ProductDisplayComponent';
 function Body() {
 	//states
 
@@ -10,10 +11,19 @@ function Body() {
 	//affichage
 	return (
 		<div className="body">
-			<Routes>
-				<Route path="/" element={<LogComponent />} />
-				<Route path="/home" element={<div>Menu principale</div>} />
-			</Routes>
+			<div className="body-banner">
+				<img
+					className="body-banner-background"
+					src={background}
+					alt="burger_illustration"
+				/>
+			</div>
+			<div className="body-placeholder">
+				<Routes>
+					<Route path="/" element={<ProductDisplayComponent />} />
+					<Route path="/login" element={<LogComponent />} />
+				</Routes>
+			</div>
 		</div>
 	);
 }
