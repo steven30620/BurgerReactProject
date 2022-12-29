@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 //state
 function ProductDisplayComponent() {
 	//comportement
-	const [menuList, setMenuList] = useState([
+	const [menuList] = useState([
 		{
 			name: 'le premier menu ',
 			promo: 'PROMOTION !',

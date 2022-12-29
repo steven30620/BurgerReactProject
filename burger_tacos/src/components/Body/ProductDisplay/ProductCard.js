@@ -1,4 +1,4 @@
-import '../../../styles/BodyStyle/ProductDisplayStyle/ProductCard.scss';
+import 'BodyStyle/ProductDisplayStyle/ProductCard';
 
 export default function ProductCard({ ProductInfo }) {
 	return (
