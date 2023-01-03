@@ -1,12 +1,16 @@
 .productCard{
     height: 250px;
     width: 200px;
-    border: 3px solid rgb(43, 44, 119);
-    background-color: rgba(17, 91, 137, 0.798);
+    border: 3px solid rgb(81, 81, 82);
+    background-color: rgba(135, 148, 156, 0.798);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     margin: 10px;
+    
+    &-fade{
+        animation: fade-in 0.5s ease-in-out 1 running ;
+    }
     &:hover{
         cursor: pointer;
         transform: scale(1.08);
@@ -16,7 +20,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        border-bottom: solid 3px  rgb(43, 44, 119);
+        border-bottom: solid 3px  rgb(66, 66, 77);
         &-name{
             display: flex;
             justify-content: center;
@@ -38,7 +42,7 @@
            
            
         }
-        border-bottom: solid 3px  rgb(43, 44, 119);
+        border-bottom: solid 3px  rgb(106, 106, 110);
     }
     &-footer{
         display: flex;
@@ -49,5 +53,17 @@
             height: 20px;
         }
        
+    }
+}
+
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
     }
 }

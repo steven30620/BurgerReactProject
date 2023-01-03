@@ -13,7 +13,7 @@ export default function ProductCard({ ProductInfo }) {
 	// };
 
 	return (
-		<div className="productCard">
+		<div className="productCard productCard-fade">
 			<div className="productCard-header">
 				<div className="productCard-header-name">
 					{ProductInfo.name}
